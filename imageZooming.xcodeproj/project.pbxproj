@@ -13,6 +13,7 @@
 		D48FF68B262E9F8D00CC3F0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48FF689262E9F8D00CC3F0C /* Main.storyboard */; };
 		D48FF68D262E9F9100CC3F0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48FF68C262E9F9100CC3F0C /* Assets.xcassets */; };
 		D48FF690262E9F9100CC3F0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D48FF68E262E9F9100CC3F0C /* LaunchScreen.storyboard */; };
+		D48FF698262EC61900CC3F0C /* startViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48FF697262EC61900CC3F0C /* startViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D48FF68C262E9F9100CC3F0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48FF68F262E9F9100CC3F0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D48FF691262E9F9100CC3F0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D48FF697262EC61900CC3F0C /* startViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				D48FF685262E9F8D00CC3F0C /* SceneDelegate.swift */,
 				D48FF687262E9F8D00CC3F0C /* ViewController.swift */,
 				D48FF689262E9F8D00CC3F0C /* Main.storyboard */,
+				D48FF697262EC61900CC3F0C /* startViewController.swift */,
 				D48FF68C262E9F9100CC3F0C /* Assets.xcassets */,
 				D48FF68E262E9F9100CC3F0C /* LaunchScreen.storyboard */,
 				D48FF691262E9F9100CC3F0C /* Info.plist */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D48FF688262E9F8D00CC3F0C /* ViewController.swift in Sources */,
+				D48FF698262EC61900CC3F0C /* startViewController.swift in Sources */,
 				D48FF684262E9F8D00CC3F0C /* AppDelegate.swift in Sources */,
 				D48FF686262E9F8D00CC3F0C /* SceneDelegate.swift in Sources */,
 			);
