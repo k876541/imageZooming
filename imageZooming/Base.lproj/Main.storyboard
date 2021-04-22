@@ -11,7 +11,6 @@
         <!--Image Change-->
         <scene sceneID="Wvn-6N-u5K">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mbO-8h-gz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="KFH-Y6-0EW" customClass="startViewController" customModule="imageZooming" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GH4-Ip-sn0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -38,6 +37,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Image Change" id="WgS-j2-k4n"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbO-8h-gz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="95.652173913043484" y="87.723214285714278"/>
         </scene>
@@ -55,23 +55,24 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="OPq-4X-4xz">
                                         <rect key="frame" x="0.0" y="0.0" width="2070" height="774"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jAr-W8-i9f">
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jAr-W8-i9f">
                                                 <rect key="frame" x="0.0" y="1" width="414" height="771.5"/>
                                                 <color key="tintColor" cyan="0.28999999999999998" magenta="0.22958190740000001" yellow="0.2010045201" black="2.6747389709999998e-05" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                                <gestureRecognizers/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jz9-cl-8jv">
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jz9-cl-8jv">
                                                 <rect key="frame" x="414" y="1" width="414" height="771.5"/>
                                                 <color key="tintColor" red="0.62697607280000001" green="0.63127986189999996" blue="0.63235580920000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ypN-ek-b8a">
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ypN-ek-b8a">
                                                 <rect key="frame" x="828" y="1" width="414" height="771.5"/>
                                                 <color key="tintColor" red="0.62697607280000001" green="0.63127986189999996" blue="0.63235580920000001" alpha="1" colorSpace="calibratedRGB"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6D1-jK-jeP">
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6D1-jK-jeP">
                                                 <rect key="frame" x="1242" y="1" width="414" height="771.5"/>
                                                 <color key="tintColor" cyan="0.28999999999999998" magenta="0.22958190740000001" yellow="0.2010045201" black="2.6747389709999998e-05" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sFH-N4-Acg">
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="sFH-N4-Acg">
                                                 <rect key="frame" x="1656" y="1" width="414" height="771.5"/>
                                                 <color key="tintColor" cyan="0.28999999999999998" magenta="0.22958190740000001" yellow="0.2010045201" black="2.6747389709999998e-05" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                             </imageView>
@@ -81,10 +82,18 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="jAr-W8-i9f" firstAttribute="width" secondItem="dBO-B4-qgc" secondAttribute="width" id="1Go-aD-EZJ"/>
+                                    <constraint firstItem="jz9-cl-8jv" firstAttribute="height" secondItem="dBO-B4-qgc" secondAttribute="height" id="1u0-x5-2Kf"/>
+                                    <constraint firstItem="sFH-N4-Acg" firstAttribute="height" secondItem="dBO-B4-qgc" secondAttribute="height" id="6g5-QX-Bl0"/>
+                                    <constraint firstItem="ypN-ek-b8a" firstAttribute="height" secondItem="dBO-B4-qgc" secondAttribute="height" id="8GI-dR-RRb"/>
                                     <constraint firstItem="jAr-W8-i9f" firstAttribute="height" secondItem="dBO-B4-qgc" secondAttribute="height" id="A86-Ir-7aj"/>
+                                    <constraint firstItem="ypN-ek-b8a" firstAttribute="width" secondItem="dBO-B4-qgc" secondAttribute="width" id="HbY-Ti-xwp"/>
+                                    <constraint firstItem="6D1-jK-jeP" firstAttribute="height" secondItem="dBO-B4-qgc" secondAttribute="height" id="Hqf-Dh-ezz"/>
                                     <constraint firstAttribute="trailing" secondItem="OPq-4X-4xz" secondAttribute="trailing" id="Uza-42-ZlN"/>
+                                    <constraint firstItem="sFH-N4-Acg" firstAttribute="width" secondItem="dBO-B4-qgc" secondAttribute="width" id="bag-vV-6QF"/>
                                     <constraint firstAttribute="bottom" secondItem="OPq-4X-4xz" secondAttribute="bottom" id="eTL-ve-gw3"/>
                                     <constraint firstItem="OPq-4X-4xz" firstAttribute="top" secondItem="dBO-B4-qgc" secondAttribute="top" id="lEc-8q-uMa"/>
+                                    <constraint firstItem="6D1-jK-jeP" firstAttribute="width" secondItem="dBO-B4-qgc" secondAttribute="width" id="sCr-uL-VQ0"/>
+                                    <constraint firstItem="jz9-cl-8jv" firstAttribute="width" secondItem="dBO-B4-qgc" secondAttribute="width" id="wWQ-s9-b2i"/>
                                     <constraint firstItem="OPq-4X-4xz" firstAttribute="leading" secondItem="YUu-63-ufd" secondAttribute="leading" id="x0t-0X-QRe"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="Ps6-9Y-HuU"/>
@@ -132,7 +141,6 @@
         <!--Navigation Controller-->
         <scene sceneID="AIh-tG-lja">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2sH-33-vqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fHN-Nu-3kQ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mb7-0i-ozZ">
@@ -144,6 +152,7 @@
                         <segue destination="KFH-Y6-0EW" kind="relationship" relationship="rootViewController" id="Poo-T1-3d3"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2sH-33-vqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-629" y="88"/>
         </scene>
